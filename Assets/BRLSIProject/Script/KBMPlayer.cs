@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 // Written by Lyra
@@ -8,6 +9,8 @@ public class KBMPlayer : MonoBehaviour
 {
 
     public Camera Camera;
+    public UIController UI;
+    [HideInInspector] public GameObject LookTarget;
 
     public float Speed = 0.1f;
     public float JumpPower = 60f;
@@ -15,11 +18,12 @@ public class KBMPlayer : MonoBehaviour
     public float Gravity = -1f;
     public bool Noclip = false;
 
+    float pmx = 0f;
+    float pmy = 0f;
     float mx = 0f;
     float my = 0f;
-    float speedmul = 1f;
-    Vector3 startPos;
 
+    Vector3 startPos;
     Rigidbody rb;
     Collider col;
 
@@ -37,55 +41,65 @@ public class KBMPlayer : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown("v"))
+        Vector3 dv = new Vector3(0, Noclip ? 0 : Gravity+rb.velocity.y, 0);
+        if (!UI.ControlsLocked)
         {
-            Noclip = !Noclip;
-            col.enabled = !Noclip;
-            Debug.Log("Noclip: " + Noclip);
+            if (Input.GetKeyDown("v")) {
+                Noclip = !Noclip;
+                col.enabled = !Noclip;
+                Debug.Log("Noclip = " + Noclip);
+            }
+
+            float speedmul;
+            if (Input.GetKey("left shift")) { speedmul = 3f; }
+            else if (Input.GetKey("left ctrl")) { speedmul = 0.2f; }
+            else { speedmul = 1f; }
+
+            if (Noclip) {
+                dv = Camera.transform.rotation * new Vector3(
+                    Input.GetKey("d") ? 1 : Input.GetKey("a") ? -1 : 0,
+                    Input.GetKey("e") ? 1 : Input.GetKey("q") ? -1 : 0,
+                    Input.GetKey("w") ? 1 : Input.GetKey("s") ? -1 : 0
+                ) * speedmul * Speed;
+            }
+            else {
+                dv += Quaternion.Euler(0, Camera.transform.rotation.eulerAngles.y, 0) * new Vector3(
+                    (Input.GetKey("d") ? 1 : Input.GetKey("a") ? -1 : 0) * speedmul * Speed,
+                    Input.GetKeyDown("space") ? JumpPower : 0,
+                    (Input.GetKey("w") ? 1 : Input.GetKey("s") ? -1 : 0) * speedmul * Speed
+                );
+            }
+
+            // Only rotate camera and do raycast if the mouse has been moved
+
+            mx += Input.GetAxis("Mouse X") * Sensitivity;
+            my = Mathf.Clamp(my + Input.GetAxis("Mouse Y") * Sensitivity, -90, 90);
+
+            if (mx != pmx || my != pmy) {
+                pmx = mx; pmy = my;
+                Camera.transform.rotation = Quaternion.Euler(-my, mx, 0);
+
+                Ray ray = Camera.ScreenPointToRay(Input.mousePosition);
+                RaycastHit rayHit;
+                if (Physics.Raycast(ray, out rayHit)) {
+                    LookTarget = rayHit.transform.gameObject;
+                }
+            }
+
+            if (Input.GetMouseButtonDown(0)) { // left
+                Examinable ex = LookTarget.GetComponent<Examinable>();
+                if (ex != null)
+                {
+                    UI.Examine(ex);
+                }
+            }
+
         }
 
-        if (Input.GetKey("left shift"))
-        {
-            speedmul = 3f;
-        }
-        else if (Input.GetKey("left ctrl"))
-        {
-            speedmul = 0.2f;
-        }
-        else
-        {
-            speedmul = 1f;
-        }
-
-        Vector3 v;
-
-        if (Noclip)
-        {
-            v = Camera.transform.rotation * new Vector3(
-                Input.GetKey("d") ? 1 : Input.GetKey("a") ? -1 : 0,
-                Input.GetKey("e") ? 1 : Input.GetKey("q") ? -1 : 0,
-                Input.GetKey("w") ? 1 : Input.GetKey("s") ? -1 : 0
-            ) * speedmul * Speed;
-        }
-        else
-        {
-            v = Quaternion.Euler(0, Camera.transform.rotation.eulerAngles.y, 0) * new Vector3(
-                (Input.GetKey("d") ? 1 : Input.GetKey("a") ? -1 : 0) * speedmul * Speed,
-                (Input.GetKeyDown("space") ? JumpPower : 0) + Gravity + rb.velocity.y,
-                (Input.GetKey("w") ? 1 : Input.GetKey("s") ? -1 : 0) * speedmul * Speed
-            );
-        }
-
-        mx += Input.GetAxis("Mouse X") * Sensitivity;
-        my = Mathf.Clamp(my+Input.GetAxis("Mouse Y") * Sensitivity, -90, 90);
-
-        Camera.transform.rotation = Quaternion.Euler(-my, mx, 0);
-
-        rb.velocity = v;
+        rb.velocity = dv;
 
         // Out of bounds check
-        if (transform.position.y < -20)
-        {
+        if (transform.position.y < -20) {
             transform.position = startPos;
             rb.velocity = Vector3.zero;
         }
