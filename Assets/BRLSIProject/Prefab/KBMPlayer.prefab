@@ -136,9 +136,9 @@ MonoBehaviour:
   UI: {fileID: 3995651465009441456}
   LookTarget: {fileID: 0}
   Speed: 10
-  JumpPower: 7
+  JumpPower: 9
   Sensitivity: 3
-  Gravity: -0.12
+  Gravity: -0.065
   Noclip: 0
 --- !u!54 &4599066027463912890
 Rigidbody:

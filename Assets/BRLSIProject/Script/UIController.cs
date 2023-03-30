@@ -7,7 +7,7 @@ using UnityEngine;
 public class UIController : MonoBehaviour
 {
     public bool ControlsLocked = false;
-    public GameObject ExaminableUI;
+    public ExaminableUI ExaminableUI;
 
     private void Start()
     {
@@ -23,8 +23,8 @@ public class UIController : MonoBehaviour
     public void Examine(Examinable ex)
     {
         ControlsLocked = true;
-        ExaminableUI.SetActive(true);
-        ex.LoadModel(ExaminableUI.transform.GetChild(0).gameObject);
+        ExaminableUI.gameObject.SetActive(true);
+        ExaminableUI.Load(ex);
     }
 
     // Close all active windows and release controls.
@@ -32,6 +32,6 @@ public class UIController : MonoBehaviour
     public void Escape()
     {
         ControlsLocked = false;
-        ExaminableUI.SetActive(false);
+        ExaminableUI.gameObject.SetActive(false);
     }
 }

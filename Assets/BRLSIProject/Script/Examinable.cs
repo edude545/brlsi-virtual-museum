@@ -1,11 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.GraphicsBuffer;
 
 // Written by Lyra
 
 public class Examinable : MonoBehaviour
 {
+
+    public float ScaleFactorOverride = 512f;
+
     // Load this Examinable's mesh and material to the passed GameObject.
     public void LoadModel(GameObject obj)
     {
@@ -14,13 +18,20 @@ public class Examinable : MonoBehaviour
         obj.GetComponent<MeshRenderer>().sharedMaterial = getMaterial();
 
         float maxMagnitude = float.MinValue;
+        Vector3 centre = Vector3.zero; int n = 0;
+        foreach (Vector3 v in mesh.vertices)
+        {
+            centre += v; n++;
+        }
+        centre /= n;
         foreach (Vector3 v in mesh.vertices)
         {
             maxMagnitude = Mathf.Max(maxMagnitude, v.magnitude);
         }
-        float d = Mathf.Sqrt(maxMagnitude * maxMagnitude)/3);
+        float d = 1 / Mathf.Sqrt(maxMagnitude * maxMagnitude) / 3 * ScaleFactorOverride;
+        Debug.Log(d);
         obj.transform.localScale = new Vector3(d, d, d);
-        
+
     }
 
     // todo: we probably want to separate the meshes displayed in the museum from the examined meshes
