@@ -28,7 +28,7 @@ public class Examinable : MonoBehaviour
         {
             maxMagnitude = Mathf.Max(maxMagnitude, v.magnitude);
         }
-        float d = 1 / Mathf.Sqrt(maxMagnitude * maxMagnitude) / 3 * ScaleFactorOverride;
+        float d = 1 / Mathf.Sqrt(maxMagnitude * maxMagnitude) / 5 * ScaleFactorOverride;
         Debug.Log(d);
         obj.transform.localScale = new Vector3(d, d, d);
 

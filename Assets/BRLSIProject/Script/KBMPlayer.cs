@@ -9,7 +9,6 @@ public class KBMPlayer : MonoBehaviour
 {
 
     public Camera Camera;
-    public UIController UI;
     [HideInInspector] public GameObject LookTarget;
 
     public float Speed = 0.1f;
@@ -26,6 +25,8 @@ public class KBMPlayer : MonoBehaviour
     Vector3 startPos;
     Rigidbody rb;
     Collider col;
+    LookText lastLookText;
+    bool raycastedThisFrame = false;
 
     private void Awake()
     {
@@ -41,8 +42,9 @@ public class KBMPlayer : MonoBehaviour
 
     private void Update()
     {
+        raycastedThisFrame = false;
         Vector3 dv = new Vector3(0, Noclip ? 0 : Gravity+rb.velocity.y, 0);
-        if (!UI.ControlsLocked)
+        if (!UIController.Instance.ControlsLocked)
         {
             if (Input.GetKeyDown("v")) {
                 Noclip = !Noclip;
@@ -75,25 +77,26 @@ public class KBMPlayer : MonoBehaviour
             mx += Input.GetAxis("Mouse X") * Sensitivity;
             my = Mathf.Clamp(my + Input.GetAxis("Mouse Y") * Sensitivity, -90, 90);
 
-            if (mx != pmx || my != pmy) {
+            if (mx != pmx || my != pmy) { // When mouse is moved:
                 pmx = mx; pmy = my;
                 Camera.transform.rotation = Quaternion.Euler(-my, mx, 0);
-
-                Ray ray = Camera.ScreenPointToRay(Input.mousePosition);
-                RaycastHit rayHit;
-                if (Physics.Raycast(ray, out rayHit)) {
-                    LookTarget = rayHit.transform.gameObject;
+                if (!raycastedThisFrame) {
+                    DoRaycast();
                 }
             }
 
-            if (Input.GetMouseButtonDown(0)) { // left
-                Examinable ex = LookTarget.GetComponent<Examinable>();
-                if (ex != null)
-                {
-                    UI.Examine(ex);
+            if (LookTarget != null)
+            {
+                // Examinable behavior
+                if (Input.GetMouseButtonDown(0))
+                { // left
+                    Examinable ex = LookTarget.GetComponent<Examinable>();
+                    if (ex != null)
+                    {
+                        UIController.Instance.Examine(ex);
+                    }
                 }
             }
-
         }
 
         rb.velocity = dv;
@@ -104,6 +107,34 @@ public class KBMPlayer : MonoBehaviour
             rb.velocity = Vector3.zero;
         }
 
+    }
+
+    protected void DoRaycast()
+    {
+        raycastedThisFrame = true;
+        Ray ray = Camera.ScreenPointToRay(Input.mousePosition);
+        RaycastHit rayHit;
+        LookTarget = null;
+        if (Physics.Raycast(ray, out rayHit))
+        {
+            LookTarget = rayHit.transform.gameObject;
+
+            // LookText behavior
+            LookText lt = LookTarget.GetComponent<LookText>();
+            if (lt == null)
+            { // Hide text if nothing was found
+                UIController.Instance.HideText();
+                lastLookText = null;
+            }
+            else
+            {
+                if (lt != lastLookText && (LookTarget.transform.position - transform.position).magnitude < lt.MaxLookDistance)
+                {
+                    lastLookText = lt;
+                    UIController.Instance.DisplayText(lt.Text);
+                }
+            }
+        }
     }
 
 }
