@@ -1,0 +1,88 @@
+header { /*This is to make the header the colour that I wanted it to be.*/
+    background-color: #9097C0;
+    margin: 0;
+    overflow: hidden;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {/*This makes the links coloured white.*/
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffff;
+    font-size: 30;
+    text-decoration: none;
+    margin: 15;
+}
+
+header nav li a:hover {
+    text-decoration: underline;
+}
+
+header h1 {
+    text-align: center;
+    text-decoration: underline;
+    color: #ffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 100;
+}
+
+body {
+    background-color: #133667;
+}
+
+main {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #A7BBEC;
+    color: #ffff;
+    width: 75%;
+}
+
+main article h2 {
+    text-decoration: underline;
+    font-size: 35;
+}
+
+main article p {
+    color: #ffff;
+    display: block;
+    margin: 3%;
+    font-size: 20;
+}
+
+aside, main {
+    float: left;
+    vertical-align: top;
+    padding: 2em;
+}
+
+aside {
+    background-color: none;
+    vertical-align: top;
+    float: right;
+    color: #ffff;
+}
+
+aside img {
+    height: auto;
+    width: 300;
+    align-content: space-around;
+    text-align-last: left;
+}
+
+footer {
+    clear: both;
+    background-color: #DA4167;
+    color: #ffff;
+    padding: 1.5em;
+    text-align: center;
+}
