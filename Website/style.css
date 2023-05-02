@@ -40,43 +40,39 @@ body {
     background-color: #133667;
 }
 
-main {
-    font-family: Arial, Helvetica, sans-serif;
+.center{
+    margin: auto;
+    width: 60%;
+    padding: 10px;
     background-color: #A7BBEC;
+    border: 3px solid #A7BBEC;
     color: #ffff;
-    width: 75%;
 }
 
-main article h2 {
+.center h2{
     text-decoration: underline;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 35;
 }
 
-main article p {
-    color: #ffff;
-    display: block;
-    margin: 3%;
-    font-size: 20;
+.center p {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 75%;
+    align-items: center;
+    vertical-align: center;
+    margin: 3px;
 }
 
-aside, main {
-    float: left;
-    vertical-align: top;
-    padding: 2em;
+.center img {
+    margin: 10px;
+    vertical-align: center;
+    align-items: center;
 }
 
-aside {
-    background-color: none;
-    vertical-align: top;
-    float: right;
-    color: #ffff;
-}
-
-aside img {
-    height: auto;
-    width: 300;
-    align-content: space-around;
-    text-align-last: left;
+main article {
+    margin: 0.5rem;
+    align-items: center;
+    background-color: #A7BBEC;
 }
 
 footer {
