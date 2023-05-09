@@ -11,6 +11,8 @@ public class UIController : MonoBehaviour
 
     public bool ControlsLocked = false;
 
+    public GameObject Reticle;
+    
     public GameObject TextBG;
     public TMP_Text HoverText;
 
@@ -35,6 +37,7 @@ public class UIController : MonoBehaviour
     public void Examine(Examinable ex)
     {
         ControlsLocked = true;
+        Reticle.SetActive(false);
         ExaminableUI.gameObject.SetActive(true);
         ExaminableUI.Load(ex);
     }
@@ -61,6 +64,8 @@ public class UIController : MonoBehaviour
     public void Escape()
     {
         ControlsLocked = false;
+        Reticle.SetActive(true);
+        ExaminableUI.Unload();
         ExaminableUI.gameObject.SetActive(false);
     }
 }

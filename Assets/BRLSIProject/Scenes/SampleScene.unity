@@ -404,6 +404,10 @@ PrefabInstance:
       propertyPath: Sensitivity
       value: 0.25
       objectReference: {fileID: 0}
+    - target: {fileID: 5741550592778691388, guid: 6b93ce3636f90344dab0ae48038c05d4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6797538837382298937, guid: 6b93ce3636f90344dab0ae48038c05d4, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -707,8 +711,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a246270b8f0d1541abbbc1a0941855c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Text: Lorem Ipsum is simply dummy text of the printing and typesetting in
   MaxLookDistance: 10
-  Text: Test text helo world! hello world this is some test text :)
 --- !u!65 &934413544
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -876,7 +880,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6447726719059284284, guid: f57b4804cc066d842a4d15422fd7756c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: -0.231
       objectReference: {fileID: 0}
     - target: {fileID: 6447726719059284284, guid: f57b4804cc066d842a4d15422fd7756c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y

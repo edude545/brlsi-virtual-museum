@@ -11,7 +11,7 @@ public class Examinable : MonoBehaviour
     public float ScaleFactorOverride = 512f;
 
     // Load this Examinable's mesh and material to the passed GameObject.
-    public void LoadModel(GameObject obj)
+    /*public void LoadModel(GameObject obj)
     {
         Mesh mesh = getMesh();
         obj.GetComponent<MeshFilter>().sharedMesh = mesh;
@@ -32,7 +32,7 @@ public class Examinable : MonoBehaviour
         Debug.Log(d);
         obj.transform.localScale = new Vector3(d, d, d);
 
-    }
+    }*/
 
     // todo: we probably want to separate the meshes displayed in the museum from the examined meshes
     // could help with web optimisation, maybe only load the high-fidelity meshes from the server on request?
