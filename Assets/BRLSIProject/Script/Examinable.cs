@@ -10,6 +10,8 @@ public class Examinable : MonoBehaviour
 
     public float ScaleFactorOverride = 512f;
 
+    public bool RotateCameraInstead = false;
+
     // Load this Examinable's mesh and material to the passed GameObject.
     /*public void LoadModel(GameObject obj)
     {
