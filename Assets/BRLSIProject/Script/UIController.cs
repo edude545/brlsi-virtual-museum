@@ -28,6 +28,7 @@ public class UIController : MonoBehaviour
     private void Start()
     {
         Escape();
+        HideText();
     }
 
     private void Update()

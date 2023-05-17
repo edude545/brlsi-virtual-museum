@@ -7,10 +7,11 @@ using static UnityEngine.GraphicsBuffer;
 
 public class Examinable : MonoBehaviour
 {
+    public float CameraDistance = 3f;
 
-    public float ScaleFactorOverride = 512f;
+    /*public float ScaleFactorOverride = 512f;
 
-    public bool RotateCameraInstead = false;
+    public bool RotateCameraInstead = false;*/
 
     // Load this Examinable's mesh and material to the passed GameObject.
     /*public void LoadModel(GameObject obj)
@@ -38,10 +39,10 @@ public class Examinable : MonoBehaviour
 
     // todo: we probably want to separate the meshes displayed in the museum from the examined meshes
     // could help with web optimisation, maybe only load the high-fidelity meshes from the server on request?
-    private Mesh getMesh() {
+    /*private Mesh getMesh() {
         return GetComponent<MeshFilter>().sharedMesh;
     }
     private Material getMaterial() {
         return GetComponent<MeshRenderer>().sharedMaterial;
-    }
+    }*/
 }

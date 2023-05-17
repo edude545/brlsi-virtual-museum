@@ -31,8 +31,9 @@ public class ExaminableUI : MonoBehaviour
         cam.GetComponent<Camera>().targetTexture = renderTex;
         GetComponent<RawImage>().texture = renderTex;
         GetComponent<RawImage>().SetNativeSize();
-        zoom = 1f;
-        cam.transform.position = cameraFocus + new Vector3(0, 3, zoom);
+        zoom = 1f * ex.CameraDistance;
+        ZoomSpeed = zoom / 50f;
+        cam.transform.position = cameraFocus + new Vector3(0, zoom/3f, zoom);
         cam.transform.LookAt(cameraFocus);
     }
 
@@ -52,7 +53,7 @@ public class ExaminableUI : MonoBehaviour
         if (Input.GetMouseButton(1)) {
             zoomCamera(Input.GetAxis("Mouse Y") * ZoomSpeed);
         } else {
-            rotateCamera(Input.GetAxis("Mouse Y") * Sensitivity, Input.GetAxis("Mouse X") * Sensitivity);
+            rotateCamera(Input.GetAxis("Mouse Y") * Sensitivity, -Input.GetAxis("Mouse X") * Sensitivity);
         }
     }
 
