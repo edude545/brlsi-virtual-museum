@@ -11,13 +11,7 @@ public class ExaminableUI : MonoBehaviour
     public float Sensitivity = 1f;
     public float ZoomSpeed = 1f;
     public Quaternion DefaultRotation = Quaternion.identity;
-    public bool RotateCameraInstead = false;
 
-    // If rotating object
-    protected Transform ExaminedObject;
-    protected Quaternion OriginalRotation;
-
-    // If rotating camera
     public float MinimumZoom = -8f;
     protected GameObject cam;
     public GameObject CamPrefab;
@@ -27,27 +21,19 @@ public class ExaminableUI : MonoBehaviour
 
     public void Load(Examinable ex)
     {
-        RotateCameraInstead = ex.RotateCameraInstead;
         cameraFocus = ex.transform.position;
         if (renderTex != null) {
             renderTex.Release();
         }
-        if (RotateCameraInstead) {
-            GetComponent<RawImage>().enabled = true;
-            renderTex = new RenderTexture(Screen.width, Screen.height, 16);
-            cam = Instantiate(CamPrefab);
-            cam.GetComponent<Camera>().targetTexture = renderTex;
-            GetComponent<RawImage>().texture = renderTex;
-            GetComponent<RawImage>().SetNativeSize();
-            zoom = 1f;
-            cam.transform.position = cameraFocus + new Vector3(0, 3, zoom);
-            cam.transform.LookAt(cameraFocus);
-        } else {
-            GetComponent<RawImage>().enabled = false;
-            ExaminedObject = ex.transform;
-            OriginalRotation = ex.transform.rotation;
-        }
-        
+        GetComponent<RawImage>().enabled = true;
+        renderTex = new RenderTexture(Screen.width, Screen.height, 16);
+        cam = Instantiate(CamPrefab);
+        cam.GetComponent<Camera>().targetTexture = renderTex;
+        GetComponent<RawImage>().texture = renderTex;
+        GetComponent<RawImage>().SetNativeSize();
+        zoom = 1f;
+        cam.transform.position = cameraFocus + new Vector3(0, 3, zoom);
+        cam.transform.LookAt(cameraFocus);
     }
 
     public void Unload()
@@ -56,25 +42,17 @@ public class ExaminableUI : MonoBehaviour
         {
             Destroy(cam);
         }
-        if (!RotateCameraInstead && ExaminedObject != null && OriginalRotation != null) {
-            ExaminedObject.transform.rotation = OriginalRotation;
-        }
     }
 
-    void Update()
-    {
+    void Update() {
         /* Model.transform.Rotate(Input.GetAxis("Mouse Y") * Sensitivity,
              -Input.GetAxis("Mouse X") * Sensitivity, 
              0, Space.World);
          Model.transform.localScale += Vector3.one * Input.mouseScrollDelta.y * ZoomSpeed;*/
-        if (Input.GetMouseButton(1) && RotateCameraInstead) {
+        if (Input.GetMouseButton(1)) {
             zoomCamera(Input.GetAxis("Mouse Y") * ZoomSpeed);
         } else {
-            if (RotateCameraInstead) {
-                rotateCamera(Input.GetAxis("Mouse Y") * Sensitivity, Input.GetAxis("Mouse X") * Sensitivity);
-            } else {
-                ExaminedObject.Rotate(new Vector3(Input.GetAxis("Mouse X"),Input.GetAxis("Mouse Y"),0), Space.World);
-            }
+            rotateCamera(Input.GetAxis("Mouse Y") * Sensitivity, Input.GetAxis("Mouse X") * Sensitivity);
         }
     }
 

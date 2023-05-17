@@ -18,6 +18,8 @@ public class UIController : MonoBehaviour
 
     public ExaminableUI ExaminableUI;
 
+    public TrackballRotate TrackballRotate;
+
     private void Awake()
     {
         Instance = this;
@@ -67,5 +69,9 @@ public class UIController : MonoBehaviour
         Reticle.SetActive(true);
         ExaminableUI.Unload();
         ExaminableUI.gameObject.SetActive(false);
+        if (TrackballRotate != null) {
+            TrackballRotate.End();
+            TrackballRotate = null;
+        }
     }
 }

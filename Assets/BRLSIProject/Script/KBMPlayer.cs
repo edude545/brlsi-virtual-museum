@@ -95,6 +95,10 @@ public class KBMPlayer : MonoBehaviour
                     {
                         UIController.Instance.Examine(ex);
                     }
+                    TrackballRotate tbr = LookTarget.GetComponent<TrackballRotate>();
+                    if (tbr != null) {
+                        tbr.Begin();
+                    }
                 }
             }
         }
