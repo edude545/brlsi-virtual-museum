@@ -104,7 +104,7 @@ Transform:
   m_GameObject: {fileID: 3561644719056369579}
   m_LocalRotation: {x: 0, y: 0.7071068, z: -0, w: -0.7071068}
   m_LocalPosition: {x: 74.76, y: 1.9, z: 68.97}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.7762245, y: 0.7762245, z: 0.7762245}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7501686083400729835}
@@ -132,10 +132,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Camera: {fileID: 5741550592778691388}
-  UI: {fileID: 0}
   LookTarget: {fileID: 0}
   Speed: 10
-  JumpPower: 9
+  JumpPower: 4
   Sensitivity: 3
   Gravity: -0.065
   Noclip: 0
