@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5741550592778691388}
   m_Layer: 0
   m_Name: Camera
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Camera: {fileID: 5741550592778691388}
   LookTarget: {fileID: 0}
-  Speed: 10
+  Speed: 5
   JumpPower: 4
   Sensitivity: 3
   Gravity: -0.065

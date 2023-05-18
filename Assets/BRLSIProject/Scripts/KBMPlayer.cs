@@ -95,9 +95,13 @@ public class KBMPlayer : MonoBehaviour
                     {
                         UIController.Instance.Examine(ex);
                     }
-                    TrackballRotate tbr = LookTarget.GetComponent<TrackballRotate>();
+                    TurntableRotate tbr = LookTarget.GetComponent<TurntableRotate>();
                     if (tbr != null) {
                         tbr.Begin();
+                    }
+                    AxisRotate ar = LookTarget.GetComponent<AxisRotate>();
+                    if (ar != null) {
+                        ar.Begin();
                     }
                 }
             }

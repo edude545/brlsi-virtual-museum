@@ -18,7 +18,8 @@ public class UIController : MonoBehaviour
 
     public ExaminableUI ExaminableUI;
 
-    public TrackballRotate TrackballRotate;
+    public TurntableRotate TurntableRotate;
+    public AxisRotate AxisRotate;
 
     private void Awake()
     {
@@ -70,9 +71,13 @@ public class UIController : MonoBehaviour
         Reticle.SetActive(true);
         ExaminableUI.Unload();
         ExaminableUI.gameObject.SetActive(false);
-        if (TrackballRotate != null) {
-            TrackballRotate.End();
-            TrackballRotate = null;
+        if (TurntableRotate != null) {
+            TurntableRotate.End();
+            TurntableRotate = null;
+        }
+        if (AxisRotate != null) {
+            AxisRotate.End();
+            AxisRotate = null;
         }
     }
 }

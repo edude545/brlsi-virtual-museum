@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Security.Cryptography;
 using UnityEngine;
 
-public class TrackballRotate : MonoBehaviour
+public class TurntableRotate : MonoBehaviour
 {
 
     bool active;
@@ -20,8 +20,9 @@ public class TrackballRotate : MonoBehaviour
     public void Begin() {
         active = true;
         if (!returning) {
-            UIController.Instance.TrackballRotate = this;
+            UIController.Instance.TurntableRotate = this;
             UIController.Instance.ControlsLocked = true;
+            UIController.Instance.Reticle.SetActive(false);
             Cursor.lockState = CursorLockMode.None;
         }
     }
@@ -35,17 +36,9 @@ public class TrackballRotate : MonoBehaviour
     }
 
     private void Update() {
-        if (active) {
-            if (Input.GetMouseButtonDown(0)) {
-                Cursor.lockState = CursorLockMode.Locked;
-            }
-            if (Input.GetMouseButton(0)) {
-                transform.Rotate(Camera.main.transform.rotation * Vector3.right, Input.GetAxis("Mouse Y"), Space.World);
-                transform.Rotate(Camera.main.transform.rotation * Vector3.down, Input.GetAxis("Mouse X"), Space.World);
-            }
-            if (Input.GetMouseButtonUp(1)) {
-                Cursor.lockState = CursorLockMode.None;
-            }
+        if (active && Input.GetMouseButton(0)) {
+            transform.Rotate(Camera.main.transform.rotation * Vector3.right, Input.GetAxis("Mouse Y"), Space.World);
+            transform.Rotate(Camera.main.transform.rotation * Vector3.down, Input.GetAxis("Mouse X"), Space.World);
         } else if (returning) {
             returnProgress += Time.deltaTime;
             if (returnProgress > 1) {
