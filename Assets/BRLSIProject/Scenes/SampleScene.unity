@@ -251,7 +251,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0299aec5bb6c5442baade91b17dafc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AngularSustain: 0.802
+  AngularDrive: 0.993
+  Sensitivity: 0.15
 --- !u!65 &17524400
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1978,6 +1979,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7254597722798585753, guid: 7b1ea45bd4a2f854aa09c91926631ef6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: db38a0a575c00d04d9401e5d842d755b, type: 2}
+    - target: {fileID: -5727322217772362693, guid: 7b1ea45bd4a2f854aa09c91926631ef6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: db38a0a575c00d04d9401e5d842d755b, type: 2}
+    - target: {fileID: 494759351821791377, guid: 7b1ea45bd4a2f854aa09c91926631ef6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4716fa00a9a4d3a4db807c1dacdf15a5, type: 2}
     - target: {fileID: 919132149155446097, guid: 7b1ea45bd4a2f854aa09c91926631ef6, type: 3}
       propertyPath: m_Name
       value: globetest
