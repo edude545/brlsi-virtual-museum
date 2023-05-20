@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.Security.Cryptography;
 using Unity.Collections;
 using UnityEngine;
+using UnityEngine.Animations;
 
 public class AxisRotate : MonoBehaviour {
 
     [Range(0, 1)] public float AngularDrive = 0.995f;
     public float Sensitivity = 0.25f;
     public string MouseAxis = "X";
+    public Vector3 RotationAxis = Vector3.back;
 
     bool active;
     float angularVelocity = 0f;
@@ -31,7 +33,7 @@ public class AxisRotate : MonoBehaviour {
             angularVelocity += Input.GetAxis("Mouse "+MouseAxis) * Sensitivity;
         }
         if (angularVelocity != 0f) {
-            transform.Rotate(Vector3.back, angularVelocity);
+            transform.Rotate(RotationAxis, angularVelocity);
             angularVelocity *= AngularDrive;
             if (Mathf.Abs(angularVelocity) < 0.001f) {
                 angularVelocity = 0f;
