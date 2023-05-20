@@ -8,6 +8,7 @@ public class AxisRotate : MonoBehaviour {
 
     [Range(0, 1)] public float AngularDrive = 0.995f;
     public float Sensitivity = 0.25f;
+    public string MouseAxis = "X";
 
     bool active;
     float angularVelocity = 0f;
@@ -27,7 +28,7 @@ public class AxisRotate : MonoBehaviour {
 
     private void Update() {
         if (active && Input.GetMouseButton(0)) {
-            angularVelocity += Input.GetAxis("Mouse X") * Sensitivity;
+            angularVelocity += Input.GetAxis("Mouse "+MouseAxis) * Sensitivity;
         }
         if (angularVelocity != 0f) {
             transform.Rotate(Vector3.back, angularVelocity);

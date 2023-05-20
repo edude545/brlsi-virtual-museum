@@ -13,6 +13,8 @@ public class TurntableRotate : MonoBehaviour
     bool returning;
     float returnProgress;
 
+    public float Sensitivity = 2f;
+
     private void Awake() {
         initialRotation = transform.localRotation;
     }
@@ -37,8 +39,8 @@ public class TurntableRotate : MonoBehaviour
 
     private void Update() {
         if (active && Input.GetMouseButton(0)) {
-            transform.Rotate(Camera.main.transform.rotation * Vector3.right, Input.GetAxis("Mouse Y"), Space.World);
-            transform.Rotate(Camera.main.transform.rotation * Vector3.down, Input.GetAxis("Mouse X"), Space.World);
+            transform.Rotate(Camera.main.transform.rotation * Vector3.right, Input.GetAxis("Mouse Y")*Sensitivity, Space.World);
+            transform.Rotate(Camera.main.transform.rotation * Vector3.down, Input.GetAxis("Mouse X")*Sensitivity, Space.World);
         } else if (returning) {
             returnProgress += Time.deltaTime;
             if (returnProgress > 1) {

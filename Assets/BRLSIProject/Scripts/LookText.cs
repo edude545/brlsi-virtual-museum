@@ -7,6 +7,8 @@ using UnityEngine.EventSystems;
 public class LookText : MonoBehaviour
 {
     //[LargeTextField]
+    [TextArea]
     public string Text = "Sample Text";
+    public int FontSize = 18;
     public float MaxLookDistance = 10f;
 }

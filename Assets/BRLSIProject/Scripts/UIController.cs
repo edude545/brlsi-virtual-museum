@@ -46,13 +46,14 @@ public class UIController : MonoBehaviour
         ExaminableUI.Load(ex);
     }
 
-    public void DisplayText(string text)
+    public void DisplayText(LookText lt)
     {
         HoverText.gameObject.SetActive(true);
         TextBG.gameObject.SetActive(true);
-        HoverText.text = text;
+        HoverText.text = lt.Text;
         HoverText.ForceMeshUpdate();
-        HoverText.SetText(text);
+        HoverText.SetText(lt.Text);
+        HoverText.fontSize = lt.FontSize;
         Vector2 v = HoverText.GetRenderedValues() + new Vector2(10,10);
         TextBG.GetComponent<RectTransform>().sizeDelta = v;
     }

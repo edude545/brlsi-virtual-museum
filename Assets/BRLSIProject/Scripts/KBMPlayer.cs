@@ -9,13 +9,17 @@ public class KBMPlayer : MonoBehaviour
 {
 
     public Camera Camera;
+    public AudioListener AudioListener;
     [HideInInspector] public GameObject LookTarget;
+
+    public SoundArea ActiveVoiceSource;
 
     public float Speed = 0.1f;
     public float JumpPower = 60f;
     public float Sensitivity = 3f;
     public float Gravity = -1f;
     public bool Noclip = false;
+    public float ScrollSensitivity = 1f;
 
     float pmx = 0f;
     float pmy = 0f;
@@ -70,6 +74,13 @@ public class KBMPlayer : MonoBehaviour
                     Input.GetKeyDown("space") ? JumpPower : 0,
                     (Input.GetKey("w") ? 1 : Input.GetKey("s") ? -1 : 0) * speedmul * Speed
                 );
+            }
+
+            if (Input.GetAxis("Mouse ScrollWheel") != 0f) {
+                Camera.fieldOfView -= Input.GetAxis("Mouse ScrollWheel") * ScrollSensitivity;
+            }
+            if (Input.GetMouseButtonDown(2)) {
+                Camera.fieldOfView = 60f;
             }
 
             // Only rotate camera and do raycast if the mouse has been moved
@@ -139,7 +150,7 @@ public class KBMPlayer : MonoBehaviour
                 if (lt != lastLookText && (LookTarget.transform.position - transform.position).magnitude < lt.MaxLookDistance)
                 {
                     lastLookText = lt;
-                    UIController.Instance.DisplayText(lt.Text);
+                    UIController.Instance.DisplayText(lt);
                 }
             }
         }

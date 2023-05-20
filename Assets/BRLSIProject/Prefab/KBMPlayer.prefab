@@ -132,12 +132,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Camera: {fileID: 5741550592778691388}
+  AudioListener: {fileID: 0}
   LookTarget: {fileID: 0}
+  ActiveVoiceSource: {fileID: 0}
   Speed: 5
   JumpPower: 4
   Sensitivity: 3
   Gravity: -0.065
   Noclip: 0
+  ScrollSensitivity: 15
 --- !u!54 &4599066027463912890
 Rigidbody:
   m_ObjectHideFlags: 0
