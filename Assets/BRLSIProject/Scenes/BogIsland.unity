@@ -17614,7 +17614,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 557316964955370295, guid: 146f03e0d51260448a0035a1fef013b8, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1974652691404422520, guid: 146f03e0d51260448a0035a1fef013b8, type: 3}
       propertyPath: m_Sprite
@@ -17711,6 +17711,14 @@ PrefabInstance:
     - target: {fileID: 1974652692680814543, guid: 146f03e0d51260448a0035a1fef013b8, type: 3}
       propertyPath: FontSize
       value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 2573092696793519403, guid: 146f03e0d51260448a0035a1fef013b8, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2789348892032800370, guid: 146f03e0d51260448a0035a1fef013b8, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 146f03e0d51260448a0035a1fef013b8, type: 3}
@@ -18265,7 +18273,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1600924361}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 19.119, y: -9.859, z: 72.018}
 --- !u!65 &1641745248
 BoxCollider:
