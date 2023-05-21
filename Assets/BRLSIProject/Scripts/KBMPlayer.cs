@@ -47,8 +47,9 @@ public class KBMPlayer : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
 
         ActiveVoiceSource = AudioDemoPlayer;
-        AudioDemoPlayer.Source.time = 0f;
-        AudioDemoPlayer.Source.Play();
+        AudioSource src = ActiveVoiceSource.GetComponent<AudioSource>();
+        src.time = 0f;
+        src.Play();
         UIController.Instance.AudioStopHint.SetActive(true);
     }
 
@@ -61,7 +62,7 @@ public class KBMPlayer : MonoBehaviour
             Application.Quit();
         }
         if (ActiveVoiceSource != null && Input.GetKeyDown("m")) {
-            ActiveVoiceSource.Source.Stop();
+            ActiveVoiceSource.GetComponent<AudioSource>().Stop();
             UIController.Instance.AudioStopHint.SetActive(false);
         }
         if (Input.GetAxis("Mouse ScrollWheel") != 0f) {
@@ -135,12 +136,12 @@ public class KBMPlayer : MonoBehaviour
                     SoundArea sa = LookTarget.GetComponent<SoundArea>();
                     if (sa != null) {
                         if (ActiveVoiceSource != null) {
-                            ActiveVoiceSource.Source.Stop();
+                            ActiveVoiceSource.GetComponent<AudioSource>().Stop();
                         }
                         ActiveVoiceSource = sa;
-                            
-                        sa.Source.time = 0f;
-                        sa.Source.Play();
+                        AudioSource src = ActiveVoiceSource.GetComponent<AudioSource>();
+                        src.time = 0f;
+                        src.Play();
                         UIController.Instance.AudioStopHint.SetActive(true);
                     }
                     Transporter ts = LookTarget.GetComponent<Transporter>();

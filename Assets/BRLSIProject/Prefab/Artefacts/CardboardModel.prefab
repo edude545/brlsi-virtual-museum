@@ -318,14 +318,14 @@ PrefabInstance:
     - target: {fileID: 8151949537988954180, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
       propertyPath: Text
       value: "The 3D model used for this building's exterior was reconstructed digitally
-        using a cardboard model as reference. \nThis building was designed in 1832
-        by the architect George Allen Underwood. It was demolished in 1932 to make
-        way for a road work project, and the Institution was moved to its present
-        location at 16-18 Queen's Square."
+        using a cardboard model as reference. \nIn 1824 this new building, designed
+        by the architect George Allen Underwood, became the home of BRLSI. It was
+        demolished in 1932 to make way for a road work project, and the Institution
+        was moved to its present location at 16-18 Queen's Square."
       objectReference: {fileID: 0}
     - target: {fileID: 8151949537988954180, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
       propertyPath: FontSize
-      value: 14
+      value: 16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}

@@ -6,12 +6,6 @@ using UnityEngine;
 [RequireComponent(typeof(AudioSource))]
 public class SoundArea : MonoBehaviour {
 
-    public AudioSource Source;
-
-    private void Start() {
-        Source = GetComponent<AudioSource>();
-    }
-
     /*private void OnTriggerEnter(Collider other) {
         KBMPlayer player = other.GetComponent<KBMPlayer>();
         if (player != null) {

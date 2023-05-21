@@ -62,7 +62,10 @@ public class UIController : MonoBehaviour
         TextBG.gameObject.SetActive(true);
         HoverText.SetText(lt.Text);
         HoverText.fontSize = lt.FontSize;
-        updateTextBGNextFrame = true;
+        //updateTextBGNextFrame = true;
+
+        HoverText.ForceMeshUpdate();
+        TextBG.GetComponent<RectTransform>().sizeDelta = HoverText.GetRenderedValues() + new Vector2(10, 10);
     }
 
     public void HideText()
