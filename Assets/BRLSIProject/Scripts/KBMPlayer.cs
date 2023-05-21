@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 // Written by Lyra
 
@@ -13,6 +14,8 @@ public class KBMPlayer : MonoBehaviour
     [HideInInspector] public GameObject LookTarget;
 
     public SoundArea ActiveVoiceSource;
+
+    public SoundArea AudioDemoPlayer;
 
     public float Speed = 0.1f;
     public float JumpPower = 60f;
@@ -42,12 +45,32 @@ public class KBMPlayer : MonoBehaviour
     private void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
+
+        ActiveVoiceSource = AudioDemoPlayer;
+        AudioDemoPlayer.Source.time = 0f;
+        AudioDemoPlayer.Source.Play();
+        UIController.Instance.AudioStopHint.SetActive(true);
     }
 
     private void Update()
     {
         raycastedThisFrame = false;
         Vector3 dv = new Vector3(0, Noclip ? 0 : Gravity+rb.velocity.y, 0);
+
+        if (Input.GetKeyDown(KeyCode.Escape)) {
+            Application.Quit();
+        }
+        if (ActiveVoiceSource != null && Input.GetKeyDown("m")) {
+            ActiveVoiceSource.Source.Stop();
+            UIController.Instance.AudioStopHint.SetActive(false);
+        }
+        if (Input.GetAxis("Mouse ScrollWheel") != 0f) {
+            Camera.fieldOfView -= Input.GetAxis("Mouse ScrollWheel") * ScrollSensitivity;
+        }
+        if (Input.GetMouseButtonDown(2)) {
+            Camera.fieldOfView = 60f;
+        }
+
         if (!UIController.Instance.ControlsLocked)
         {
             if (Input.GetKeyDown("v")) {
@@ -76,13 +99,6 @@ public class KBMPlayer : MonoBehaviour
                 );
             }
 
-            if (Input.GetAxis("Mouse ScrollWheel") != 0f) {
-                Camera.fieldOfView -= Input.GetAxis("Mouse ScrollWheel") * ScrollSensitivity;
-            }
-            if (Input.GetMouseButtonDown(2)) {
-                Camera.fieldOfView = 60f;
-            }
-
             // Only rotate camera and do raycast if the mouse has been moved
 
             mx += Input.GetAxis("Mouse X") * Sensitivity;
@@ -109,10 +125,28 @@ public class KBMPlayer : MonoBehaviour
                     TurntableRotate tbr = LookTarget.GetComponent<TurntableRotate>();
                     if (tbr != null) {
                         tbr.Begin();
+                        UIController.Instance.ExitHint.SetActive(true);
                     }
                     AxisRotate ar = LookTarget.GetComponent<AxisRotate>();
                     if (ar != null) {
                         ar.Begin();
+                        UIController.Instance.ExitHint.SetActive(true);
+                    }
+                    SoundArea sa = LookTarget.GetComponent<SoundArea>();
+                    if (sa != null) {
+                        if (ActiveVoiceSource != null) {
+                            ActiveVoiceSource.Source.Stop();
+                        }
+                        ActiveVoiceSource = sa;
+                            
+                        sa.Source.time = 0f;
+                        sa.Source.Play();
+                        UIController.Instance.AudioStopHint.SetActive(true);
+                    }
+                    Transporter ts = LookTarget.GetComponent<Transporter>();
+                    if (ts != null) {
+                        transform.parent = ts.Destination;
+                        transform.localPosition = Vector3.zero;
                     }
                 }
             }

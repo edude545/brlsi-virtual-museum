@@ -12,7 +12,7 @@ public class SoundArea : MonoBehaviour {
         Source = GetComponent<AudioSource>();
     }
 
-    private void OnTriggerEnter(Collider other) {
+    /*private void OnTriggerEnter(Collider other) {
         KBMPlayer player = other.GetComponent<KBMPlayer>();
         if (player != null) {
             if (player.ActiveVoiceSource != null) {
@@ -22,6 +22,6 @@ public class SoundArea : MonoBehaviour {
             Source.time = 0f;
             Source.Play();
         }
-    }
+    }*/
 
 }

@@ -30,7 +30,10 @@ Transform:
   m_Children:
   - {fileID: 8693866029629295746}
   - {fileID: 4307127011703632209}
+  - {fileID: 501009363217531578}
   - {fileID: 7931213326605364906}
+  - {fileID: 2713080440454557692}
+  - {fileID: 6665408504038890451}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -162,7 +165,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
       propertyPath: m_LocalScale.x
@@ -178,35 +181,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.35
       objectReference: {fileID: 0}
     - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.433
+      value: 0.436
       objectReference: {fileID: 0}
     - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.513
+      value: -0.526
       objectReference: {fileID: 0}
     - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.99236834
+      value: 0.9914449
       objectReference: {fileID: 0}
     - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.123308785
+      value: 0.13052616
       objectReference: {fileID: 0}
     - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 14.166
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -216,12 +219,116 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8151949537988954180, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: Text
+      value: "The Megalosaurus model was built by Benjamin Waterhouse Hawkins, made
+        for London\u2019s 1854 Crystal Palace Park. Based on its reptilian nature,
+        it was assumed a creature which walks on four legs, with a variety of similarities
+        to an alligator or crocodile. As our understanding of dinosaurs, and our
+        paleontological studies have advanced, we now know that they were in-fact
+        bipedal dinosaurs (walked on two legs) \u2013 and looked very different to
+        that which we had initially thought. The Megalosaurus is visible on the \u201CBeyond
+        Beastly\u201D exhibition. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 8151949537988954180, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: FontSize
+      value: 14
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
 --- !u!4 &7931213326605364906 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
   m_PrefabInstance: {fileID: 135694504519962573}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3707316441000819380
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5674695013193575684}
+    m_Modifications:
+    - target: {fileID: 7257711042648275933, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_Name
+      value: LabelPlaque (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.019004682
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.017981622
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.019172689
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0759
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.436
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.526
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9914449
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.13052616
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8151949537988954180, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: Text
+      value: "There is hand-drawn evidence to show that the Megalosaurus model in
+        BRLSi was present within the museum in the early 18th century. The model
+        demonstrates what scientists believed the dinosaur looked like at the time
+        - though we now recognise the Megalosaurus very differently. The artefact
+        not only illustrates the vast history of BRLSi, but also shows how knowledge
+        transforms as we continue learning. Just as artefacts present within the
+        museum, like the Megalosaurus, we all continue developing and growing as
+        we gain knowledge which transforms us. \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8151949537988954180, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: FontSize
+      value: 14
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+--- !u!4 &6665408504038890451 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+  m_PrefabInstance: {fileID: 3707316441000819380}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4982499026090230287
 PrefabInstance:
@@ -288,6 +395,98 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4432585885325020813, guid: df972016bdee873409f2da33c5c9a8c6, type: 3}
   m_PrefabInstance: {fileID: 4982499026090230287}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5356342741553909403
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5674695013193575684}
+    m_Modifications:
+    - target: {fileID: 7257711042648275933, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_Name
+      value: LabelPlaque (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.019004682
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.017981622
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.019172689
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.139
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.436
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.526
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9914449
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.13052616
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8151949537988954180, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: Text
+      value: "\"Megalosaurus\" translates to \"huge lizard\u201D, and lead Richard
+        Owen was responsible for the naming of dinosaurs (Dinosauria). The dinosaur
+        also plays a role in how we name and identify the lizard-like nature of dinosaurs
+        by 'saurus' \u2013 meaning \u201Clizard\u201D in Greek. The Megalosaurus
+        roamed an estimated 170-155 million years ago during the Bathonian age of
+        the Jurassic, which is named after the Jurassic limestone which Bath stands
+        upon. Our model demonstrates one of the earliest educated attempts of reconstructing
+        the dinosaur we now recognise very differently. Since its construction, we
+        now know that dinosaurs stood on two legs, with small forearms, and a deeper,
+        less crocodile-like skull. You can find this model in our \u201CBeyond Beastly\u201D
+        exhibition.\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8151949537988954180, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: FontSize
+      value: 14
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+--- !u!4 &2713080440454557692 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+  m_PrefabInstance: {fileID: 5356342741553909403}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6146530402896334747
 PrefabInstance:
@@ -362,4 +561,82 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e6892ee0b8bac1f4cb71da02b8af19df, type: 3}
   m_PrefabInstance: {fileID: 6146530402896334747}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7402251060008196329
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5674695013193575684}
+    m_Modifications:
+    - target: {fileID: 2138169803098605021, guid: d4eb075a8f919e44d80d33d8bffe8bcf, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 7e900cd0fb4810a409145704ed5a4997, type: 3}
+    - target: {fileID: 2698240393290784073, guid: d4eb075a8f919e44d80d33d8bffe8bcf, type: 3}
+      propertyPath: m_Name
+      value: AudioPlayer
+      objectReference: {fileID: 0}
+    - target: {fileID: 6938328773808216659, guid: d4eb075a8f919e44d80d33d8bffe8bcf, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6938328773808216659, guid: d4eb075a8f919e44d80d33d8bffe8bcf, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.040791284
+      objectReference: {fileID: 0}
+    - target: {fileID: 6938328773808216659, guid: d4eb075a8f919e44d80d33d8bffe8bcf, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.040791284
+      objectReference: {fileID: 0}
+    - target: {fileID: 6938328773808216659, guid: d4eb075a8f919e44d80d33d8bffe8bcf, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.040791284
+      objectReference: {fileID: 0}
+    - target: {fileID: 6938328773808216659, guid: d4eb075a8f919e44d80d33d8bffe8bcf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.339
+      objectReference: {fileID: 0}
+    - target: {fileID: 6938328773808216659, guid: d4eb075a8f919e44d80d33d8bffe8bcf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.428
+      objectReference: {fileID: 0}
+    - target: {fileID: 6938328773808216659, guid: d4eb075a8f919e44d80d33d8bffe8bcf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.501
+      objectReference: {fileID: 0}
+    - target: {fileID: 6938328773808216659, guid: d4eb075a8f919e44d80d33d8bffe8bcf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7010574
+      objectReference: {fileID: 0}
+    - target: {fileID: 6938328773808216659, guid: d4eb075a8f919e44d80d33d8bffe8bcf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.09229599
+      objectReference: {fileID: 0}
+    - target: {fileID: 6938328773808216659, guid: d4eb075a8f919e44d80d33d8bffe8bcf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7010574
+      objectReference: {fileID: 0}
+    - target: {fileID: 6938328773808216659, guid: d4eb075a8f919e44d80d33d8bffe8bcf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.09229599
+      objectReference: {fileID: 0}
+    - target: {fileID: 6938328773808216659, guid: d4eb075a8f919e44d80d33d8bffe8bcf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6938328773808216659, guid: d4eb075a8f919e44d80d33d8bffe8bcf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6938328773808216659, guid: d4eb075a8f919e44d80d33d8bffe8bcf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -15
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d4eb075a8f919e44d80d33d8bffe8bcf, type: 3}
+--- !u!4 &501009363217531578 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6938328773808216659, guid: d4eb075a8f919e44d80d33d8bffe8bcf, type: 3}
+  m_PrefabInstance: {fileID: 7402251060008196329}
   m_PrefabAsset: {fileID: 0}

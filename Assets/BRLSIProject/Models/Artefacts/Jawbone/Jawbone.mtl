@@ -1,0 +1,22 @@
+# Blender 3.4.1 MTL File: 'jaw.blend'
+# www.blender.org
+
+newmtl jaw1.001
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:/Users/edude/Desktop/jaw/jaw1.png
+
+newmtl jaw2.001
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:/Users/edude/Desktop/jaw/jaw2.png

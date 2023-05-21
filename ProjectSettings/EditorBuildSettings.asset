@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/BRLSIProject/Scenes/BogIsland.unity
+    guid: 77781472f4979a1459ec1fb72c5138e5
+  - enabled: 0
+    path: Assets/BRLSIProject/Scenes/Interior.unity
+    guid: 2d0ab5a911cf2674aa6043a3a366a71b
   m_configObjects: {}

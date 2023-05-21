@@ -93,84 +93,11 @@ Transform:
   m_Children:
   - {fileID: 5231677174277746864}
   - {fileID: 6565187923075740199}
-  - {fileID: 5333488228567541603}
+  - {fileID: 6775212070111012325}
+  - {fileID: 6414723447458506007}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &2735684264794539524
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 3737195209242896785}
-    m_Modifications:
-    - target: {fileID: 7257711042648275933, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
-      propertyPath: m_Name
-      value: LabelPlaque
-      objectReference: {fileID: 0}
-    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.044481482
-      objectReference: {fileID: 0}
-    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.04102027
-      objectReference: {fileID: 0}
-    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.06883866
-      objectReference: {fileID: 0}
-    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.261
-      objectReference: {fileID: 0}
-    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -1.171
-      objectReference: {fileID: 0}
-    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.991537
-      objectReference: {fileID: 0}
-    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.12982482
-      objectReference: {fileID: 0}
-    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 14.919
-      objectReference: {fileID: 0}
-    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
---- !u!4 &5333488228567541603 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
-  m_PrefabInstance: {fileID: 2735684264794539524}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3304785083244161159
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -232,6 +159,181 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 94ab17b172fa45742bf7dfabef1e9380, type: 3}
   m_PrefabInstance: {fileID: 3304785083244161159}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3599821316706616450
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3737195209242896785}
+    m_Modifications:
+    - target: {fileID: 7257711042648275933, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_Name
+      value: LabelPlaque (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.044481482
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.04102027
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.06883866
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.261
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.171
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.991537
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.12982482
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 14.919
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8151949537988954180, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: Text
+      value: This antique globe was drawn from knowledge of the western empires,
+        primarily Britain, so some places were in detail while other places, like
+        Africa were not explored thus not on the globe. On maps, mountain ranges
+        were also not included, making the map even more inaccurate. Over time, more
+        people explored the world which enabled globes that came after to be more
+        accurate.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8151949537988954180, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: FontSize
+      value: 12
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+--- !u!4 &6775212070111012325 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+  m_PrefabInstance: {fileID: 3599821316706616450}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3960614521192088688
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3737195209242896785}
+    m_Modifications:
+    - target: {fileID: 7257711042648275933, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_Name
+      value: LabelPlaque (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.044481482
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.04102027
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.06883866
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.261
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.171
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.991537
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.12982482
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 14.919
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8151949537988954180, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: Text
+      value: 'The globe was formed in the 19th century, when the main narrative was
+        the empires as they colonised many places, so the colonised areas were detailed
+        but the middle of Africa was not explored much, however over time more and
+        more people started to explore the continent, so it started to be filled
+        more, until it is what we know it today.
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8151949537988954180, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: FontSize
+      value: 12
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+--- !u!4 &6414723447458506007 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+  m_PrefabInstance: {fileID: 3960614521192088688}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5697088535272970075
 PrefabInstance:

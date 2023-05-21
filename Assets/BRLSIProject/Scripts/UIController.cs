@@ -16,10 +16,15 @@ public class UIController : MonoBehaviour
     public GameObject TextBG;
     public TMP_Text HoverText;
 
+    public GameObject ExitHint;
+    public GameObject AudioStopHint;
+
     public ExaminableUI ExaminableUI;
 
     public TurntableRotate TurntableRotate;
     public AxisRotate AxisRotate;
+
+    bool updateTextBGNextFrame = false;
 
     private void Awake()
     {
@@ -35,6 +40,10 @@ public class UIController : MonoBehaviour
     private void Update()
     {
         if (Input.GetKey("e")) { Escape(); }
+        if (updateTextBGNextFrame) {
+            updateTextBGNextFrame = false;
+            TextBG.GetComponent<RectTransform>().sizeDelta = HoverText.GetRenderedValues() + new Vector2(10, 10);
+        }
     }
 
     // Load mesh and material from an Examinable object, and open the respective UI.
@@ -42,6 +51,7 @@ public class UIController : MonoBehaviour
     {
         ControlsLocked = true;
         Reticle.SetActive(false);
+        ExitHint.SetActive(true);
         ExaminableUI.gameObject.SetActive(true);
         ExaminableUI.Load(ex);
     }
@@ -50,12 +60,9 @@ public class UIController : MonoBehaviour
     {
         HoverText.gameObject.SetActive(true);
         TextBG.gameObject.SetActive(true);
-        HoverText.text = lt.Text;
-        HoverText.ForceMeshUpdate();
         HoverText.SetText(lt.Text);
         HoverText.fontSize = lt.FontSize;
-        Vector2 v = HoverText.GetRenderedValues() + new Vector2(10,10);
-        TextBG.GetComponent<RectTransform>().sizeDelta = v;
+        updateTextBGNextFrame = true;
     }
 
     public void HideText()
@@ -72,6 +79,7 @@ public class UIController : MonoBehaviour
         Reticle.SetActive(true);
         ExaminableUI.Unload();
         ExaminableUI.gameObject.SetActive(false);
+        ExitHint.SetActive(false);
         if (TurntableRotate != null) {
             TurntableRotate.End();
             TurntableRotate = null;
