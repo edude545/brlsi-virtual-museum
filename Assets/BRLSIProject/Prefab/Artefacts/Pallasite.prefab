@@ -1,0 +1,565 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4052391349568257879
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5747022053574700455}
+  - component: {fileID: 875779607665600829}
+  - component: {fileID: 234994732980552044}
+  - component: {fileID: 950532234597123541}
+  - component: {fileID: 2220370948086192757}
+  m_Layer: 0
+  m_Name: Cylinder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5747022053574700455
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4052391349568257879}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.747, z: 0}
+  m_LocalScale: {x: 0.87626, y: 0.022738162, z: 0.87626}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6863376778713396371}
+  m_Father: {fileID: 5112924814995265063}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &875779607665600829
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4052391349568257879}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &234994732980552044
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4052391349568257879}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 1a7cd852b0f2887448ca0791b0c4b8dd, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &950532234597123541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4052391349568257879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0299aec5bb6c5442baade91b17dafc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AngularDrive: 0.995
+  Sensitivity: 0.25
+  MouseAxis: X
+  RotationAxis: {x: 0, y: -1, z: 0}
+--- !u!135 &2220370948086192757
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4052391349568257879}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.39
+  m_Center: {x: 0.00000005960464, y: 6.48, z: -0.00000008940696}
+--- !u!1 &5602216988121418909
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5112924814995265063}
+  m_Layer: 0
+  m_Name: Pallasite
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5112924814995265063
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5602216988121418909}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7445317891063093977}
+  - {fileID: 5747022053574700455}
+  - {fileID: 4091537451235843899}
+  - {fileID: 8803824461950296935}
+  - {fileID: 6033813329998620736}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1575757002170925568
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5112924814995265063}
+    m_Modifications:
+    - target: {fileID: 7257711042648275933, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_Name
+      value: LabelPlaqueMiddle
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.02407074
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.024604296
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.031459674
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.70270205
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.52998483
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9659258
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.2588191
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8151949537988954180, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: Text
+      value: 'It was first described as extraterrestrial in the 1790s, and became
+        one of the first described extraterrestrial objects on Earth. In the 10th
+        century we learned the Earth was much older than we had expected, and in
+        the 1950s we began radiometrically determining how old rocks are. The pallasite
+        is the central boundary of a planet which was destroyed. It''s made of nickel,
+        iron, and deep earth minerals - and formed approximately 4.2 billion years
+        ago. It is around 1/3 the age of the solar system. It formed at a time where
+        our planet was still molten, but didn''t land in Siberia until between 1000
+        and 10000 years ago.
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8151949537988954180, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: FontSize
+      value: 12
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+--- !u!4 &8803824461950296935 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+  m_PrefabInstance: {fileID: 1575757002170925568}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4345736490947381543
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5112924814995265063}
+    m_Modifications:
+    - target: {fileID: 7257711042648275933, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_Name
+      value: LabelPlaqueRight
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.02407074
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.024604296
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.031459674
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.70270205
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.52998483
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9659258
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.2588191
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8151949537988954180, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: Text
+      value: As the first ever identified extra-terrestrial object, and one of the
+        oldest objects in Bath, the journey of the pallasite is key in illustrating
+        transformative knowledge. Before this pallasite was found and recognised
+        as non-earthly - there were no recognised extraterrestrial objects. Comparing
+        then to now, the journey of this pallasite has played a massive role in research,
+        and is a small piece of a massive part of history.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8151949537988954180, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: FontSize
+      value: 12
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+--- !u!4 &6033813329998620736 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+  m_PrefabInstance: {fileID: 4345736490947381543}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6285704237105299036
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5112924814995265063}
+    m_Modifications:
+    - target: {fileID: 7257711042648275933, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_Name
+      value: LabelPlaqueLeft
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.024070745
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.024604298
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.03145967
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.29999942
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.702702
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.52997863
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9659258
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.2588191
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8151949537988954180, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: Text
+      value: 'This pallasite sample was recovered in Siberia in the 18th century.
+        It was identified as an extraterrestrial object in 1790, and in 1950 was
+        confirmed through radiometric testing to be around 4.2 billion years old.
+
+        The
+        pallasite is included in the BRLSi 3 mile walking trail. Given the BRLSi
+        in the 1820''s by Sir Richard Cox Hall. He gave 10 Siberian minerals, called
+        Pallas'' Iron at the time. It was given to the museum at a time where its
+        origin was still in speculation. It was one of the first pieces of evidence
+        that planets have metal cores - and is the most empirical evidence we have.
+        It''s the first pallasite ever discovered, and was found following a myth
+        of native Siberian Iron. It weighed 630 kilos.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8151949537988954180, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+      propertyPath: FontSize
+      value: 12
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+--- !u!4 &4091537451235843899 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8066862899253649767, guid: 27b9967b7f0478d428f0fee81b5714e7, type: 3}
+  m_PrefabInstance: {fileID: 6285704237105299036}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6392056668806255480
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5747022053574700455}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 0d410063fcdd1aa4c9e848ae61628081, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0d410063fcdd1aa4c9e848ae61628081, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.74121517
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0d410063fcdd1aa4c9e848ae61628081, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 28.564192
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0d410063fcdd1aa4c9e848ae61628081, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.74121517
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0d410063fcdd1aa4c9e848ae61628081, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0d410063fcdd1aa4c9e848ae61628081, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.57172656
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0d410063fcdd1aa4c9e848ae61628081, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0d410063fcdd1aa4c9e848ae61628081, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0d410063fcdd1aa4c9e848ae61628081, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0d410063fcdd1aa4c9e848ae61628081, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0d410063fcdd1aa4c9e848ae61628081, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0d410063fcdd1aa4c9e848ae61628081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0d410063fcdd1aa4c9e848ae61628081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0d410063fcdd1aa4c9e848ae61628081, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0d410063fcdd1aa4c9e848ae61628081, type: 3}
+      propertyPath: m_Name
+      value: Pallasite
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0d410063fcdd1aa4c9e848ae61628081, type: 3}
+--- !u!4 &6863376778713396371 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0d410063fcdd1aa4c9e848ae61628081, type: 3}
+  m_PrefabInstance: {fileID: 6392056668806255480}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6543906508786652244
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5112924814995265063}
+    m_Modifications:
+    - target: {fileID: 4432585885325020813, guid: df972016bdee873409f2da33c5c9a8c6, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4432585885325020813, guid: df972016bdee873409f2da33c5c9a8c6, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.44574
+      objectReference: {fileID: 0}
+    - target: {fileID: 4432585885325020813, guid: df972016bdee873409f2da33c5c9a8c6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4432585885325020813, guid: df972016bdee873409f2da33c5c9a8c6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4432585885325020813, guid: df972016bdee873409f2da33c5c9a8c6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4432585885325020813, guid: df972016bdee873409f2da33c5c9a8c6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4432585885325020813, guid: df972016bdee873409f2da33c5c9a8c6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4432585885325020813, guid: df972016bdee873409f2da33c5c9a8c6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4432585885325020813, guid: df972016bdee873409f2da33c5c9a8c6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4432585885325020813, guid: df972016bdee873409f2da33c5c9a8c6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4432585885325020813, guid: df972016bdee873409f2da33c5c9a8c6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4432585885325020813, guid: df972016bdee873409f2da33c5c9a8c6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8038878386150096453, guid: df972016bdee873409f2da33c5c9a8c6, type: 3}
+      propertyPath: m_Name
+      value: Pedestal
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: df972016bdee873409f2da33c5c9a8c6, type: 3}
+--- !u!4 &7445317891063093977 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4432585885325020813, guid: df972016bdee873409f2da33c5c9a8c6, type: 3}
+  m_PrefabInstance: {fileID: 6543906508786652244}
+  m_PrefabAsset: {fileID: 0}

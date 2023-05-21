@@ -50,11 +50,11 @@ body {
     margin: 0;
     background-color: #96ace0;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    margin:0;
+    overflow: hidden;
 }
 
 .center{
-    margin: auto;
-    width: 60%;
     padding: 10px;
     background-image: linear-gradient(#a7bbec,#111b53);
     
@@ -93,4 +93,7 @@ footer {
     color: #ffff;
     padding: 1.5em;
     text-align: center;
+    position: absolute;
+    bottom:0;
+    width:100vw;
 }
