@@ -1,5 +1,5 @@
 header { /*This is to make the header the colour that I wanted it to be.*/
-    background-color: #9097C0;
+    background-image: linear-gradient(#111b53, #a7bbec);
     margin: 0;
     overflow: hidden;
 }
@@ -34,14 +34,21 @@ header nav li a:hover {
 
 header h1 {
     text-align: center;
-    text-decoration: underline;
+    
     text-shadow: 4px 2px 10px #0044ff; /* added by Sam */
     color: #ffff;
     font-size: 60;
 }
 
+header h1:hover {
+    
+    text-shadow: 4px 2px 20px #0044ff;
+}
+
+
 body {
-    background-color: #133667;
+    margin: 0;
+    background-color: #96ace0;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -49,8 +56,8 @@ body {
     margin: auto;
     width: 60%;
     padding: 10px;
-    background-color: #A7BBEC;
-    border: 3px solid #A7BBEC;
+    background-image: linear-gradient(#a7bbec,#111b53);
+    
     color: #ffff;
 }
 
@@ -75,9 +82,9 @@ body {
 }
 
 main article {
-    margin: 0.5rem;
+    margin: 0.2rem;
     align-items: center;
-    background-color: #A7BBEC;
+    background-image: linear-gradient(#a7bbec,#111b53);
 }
 
 footer {
