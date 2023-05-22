@@ -32974,6 +32974,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1635852402, guid: 6b93ce3636f90344dab0ae48038c05d4, type: 3}
+      propertyPath: Gravity
+      value: -0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1635852402, guid: 6b93ce3636f90344dab0ae48038c05d4, type: 3}
       propertyPath: AudioDemoPlayer
       value: 
       objectReference: {fileID: 222293419}
