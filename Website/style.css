@@ -85,9 +85,15 @@ a.photogrammetry:hover {
   
   /* selected link */
  a.photogrammetry:active {
-    color: rgb(255, 255, 255);
     text-decoration-line: none; }
 
+hr {
+
+    height: 3px;
+
+    margin: left 0;
+
+}
 
 body {
     margin: 0;
@@ -125,7 +131,7 @@ body {
 }
 
 main article {
-    margin: 0.2rem;
+    
     align-items: center;
     background-image: linear-gradient(#a7bbec,#111b53);
 }
@@ -133,8 +139,13 @@ main article {
 .summary {
 
     color: lightblue;
+    text-shadow: 2px 2px 6px #96ace0;
 
 
+}
+
+a.summary:hover {
+    background-color: aqua;
 }
 
 
