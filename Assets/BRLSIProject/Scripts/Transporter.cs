@@ -6,5 +6,7 @@ public class Transporter : MonoBehaviour
 {
 
     public Transform Destination;
+    public GameObject EnableObject;
+    public GameObject DisableObject;
 
 }

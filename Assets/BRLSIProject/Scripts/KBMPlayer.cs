@@ -148,6 +148,12 @@ public class KBMPlayer : MonoBehaviour
                     if (ts != null) {
                         transform.parent = ts.Destination;
                         transform.localPosition = Vector3.zero;
+                        if (ts.EnableObject != null) {
+                            ts.EnableObject.SetActive(true);
+                        }
+                        if (ts.DisableObject != null) {
+                            ts.DisableObject.SetActive(false);
+                        }
                     }
                 }
             }
